@@ -3,6 +3,17 @@ plugins {
 }
 
 android {
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+        exclude("META-INF/*.java_module")
+    }
     compileSdkVersion 30
     buildToolsVersion "30.0.2"
 
@@ -35,11 +46,12 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     implementation 'androidx.navigation:navigation-fragment:2.3.4'
     implementation 'androidx.navigation:navigation-ui:2.3.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 	//qr scanner read only
-    implementation 'com.google.mlkit:barcode-scanning:16.0.3'
+    //implementation 'com.google.mlkit:barcode-scanning:16.0.3'
 
     //qr generation
     implementation 'com.github.kenglxn.QRGen:javase:2.6.0'
