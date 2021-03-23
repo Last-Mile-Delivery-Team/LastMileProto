@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Last Mile Proto</string>
+    <string name="app_name">LastMileProto</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
@@ -9,4 +9,32 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <!-- strings.xml -->
+    <string name="last_mile_d">
+
+Last Mile Delivery
+</string>
+
+    <string name="courier">
+
+Courier
+</string>
+
+    <string name="resident">
+
+Resident
+</string>
+
+    <string name="courier_log">
+
+Courier Login
+</string>
+
+    <string name="button_submit">
+
+Submit
+</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Main Login -->
+<!-- https://github.com/intuit/sdp // library for use of scp instead of dp to resolve scaling issue-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_login"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_login"
+    >
+
+    <TextView
+        android:id="@+id/last_mile_d"
+        android:layout_width="297dp"
+        android:layout_height="42dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="58dp"
+        android:layout_marginTop="79dp"
+        android:gravity="top"
+        android:text="@string/last_mile_d"
+        android:textAppearance="@style/last_mile_d" />
+
+    <Button
+        android:id="@+id/button_courierlogin"
+        style="@style/button_blue"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="96dp"
+        android:layout_marginTop="229dp"
+        android:text="@string/courier" />
+
+    <Button
+        android:id="@+id/button_residentlogin"
+        style="@style/button_blue"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="89dp"
+        android:layout_marginTop="382dp"
+        android:text="@string/resident" />
+
+</RelativeLayout>
+
