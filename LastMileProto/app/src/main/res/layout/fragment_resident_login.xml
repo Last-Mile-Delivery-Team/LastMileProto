@@ -3,40 +3,86 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".login.CourierLogin">
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:id="@+id/courier_log"
-        android:layout_width="214dp"
-        android:layout_height="49dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="100dp"
-        android:layout_marginTop="75dp"
-        android:gravity="top"
-        android:text="@string/courier_log"
-        android:textAppearance="@style/courier_log" />
+    tools:context=".login.ResidentLogin">
 
     <EditText
-        android:id="@+id/editTextNumberPassword"
-        android:layout_width="wrap_content"
+        android:id="@+id/field_residentEmail"
+        android:layout_width="280dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="94dp"
-        android:layout_marginTop="222dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="228dp"
         android:ems="10"
-        android:inputType="numberPassword" />
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/header_resident"
+        android:layout_width="258dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="79dp"
+        android:layout_marginTop="65dp"
+        android:gravity="top"
+        android:text="@string/resident_log"
+        android:textAppearance="@style/resident_log" />
 
     <Button
-        android:id="@+id/button_couriersubmit"
+        android:id="@+id/button_residentLogin"
+        style="@style/button_blue"
         android:layout_width="214dp"
         android:layout_height="49dp"
-        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="95dp"
-        android:layout_marginTop="322dp"
-        android:text="Button" />
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="464dp"
+        android:text="@string/resident_log" />
+
+    <TextView
+        android:id="@+id/text_email"
+        style="@style/instruction_text"
+        android:layout_width="214dp"
+        android:layout_height="49dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="93dp"
+        android:layout_marginTop="180dp"
+        android:gravity="center"
+        android:text="@string/email" />
+
+    <TextView
+        android:id="@+id/text_password"
+        style="@style/instruction_text"
+        android:layout_width="214dp"
+        android:layout_height="49dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="287dp"
+        android:gravity="center"
+        android:text="@string/password" />
+
+    <EditText
+        android:id="@+id/field_residentPw"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="366dp"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <Button
+        android:id="@+id/button_backResident"
+        style="@style/button_blue"
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="683dp"
+        android:text="@string/button_back" />
 
 </RelativeLayout>
