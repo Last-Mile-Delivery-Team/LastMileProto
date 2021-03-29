@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "597709616590",
+    "project_id": "lastmileproto",
+    "storage_bucket": "lastmileproto.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:597709616590:android:c3328c66c9c8f9524aa79f",
+        "android_client_info": {
+          "package_name": "com.lastmile.lastmileproto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "597709616590-6g3c3fm7ahu8qqgij2911ft4vod4dp6m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAp-L9JHGVm4uIss4lmbT0lfYMdW6gpjU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "597709616590-6g3c3fm7ahu8qqgij2911ft4vod4dp6m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
