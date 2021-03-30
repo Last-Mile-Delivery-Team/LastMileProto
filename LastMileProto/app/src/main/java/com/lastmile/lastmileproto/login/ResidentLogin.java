@@ -1,5 +1,6 @@
 package com.lastmile.lastmileproto.login;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,6 +8,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.lastmile.lastmileproto.R;
 
@@ -42,8 +44,6 @@ public class ResidentLogin extends Fragment {
     public static ResidentLogin newInstance(String param1, String param2) {
         ResidentLogin fragment = new ResidentLogin();
         Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
         fragment.setArguments(args);
         return fragment;
     }
@@ -51,9 +51,10 @@ public class ResidentLogin extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
+        Button button_courierlogin = findViewById(R.id. );
+        button_courierlogin.setOnClickListener(view -> {
+            Intent MainLogtoCourierLog = new Intent(this, CourierLogin.class);
+            startActivity(MainLogtoCourierLog);
         }
     }
 
