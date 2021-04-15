@@ -7,7 +7,7 @@
 <!-- robbie this is where you put the ui for the resident tutorial-->
     <!-- TODO: Update blank fragment layout -->
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_tutoriallogout"
         style="@style/button_blue"
         android:layout_width="150dp"
         android:layout_height="50dp"
@@ -18,7 +18,7 @@
         android:text="Logout" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/button_tutorialback"
         style="@style/button_blue"
         android:layout_width="150dp"
         android:layout_height="50dp"

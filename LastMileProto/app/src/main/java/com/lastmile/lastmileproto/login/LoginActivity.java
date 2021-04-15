@@ -14,11 +14,7 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        Button button_courierlogin = findViewById(R.id.button_courierlogin);
-        button_courierlogin.setOnClickListener(view -> {
-            Intent MainLogtoCourierLog = new Intent(this, CourierLogin.class);
-            startActivity(MainLogtoCourierLog);
-        });
+
 
     }
 }

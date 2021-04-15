@@ -8,7 +8,7 @@
     <!-- Robbie, put your xml code  from figma and the palette into here, resolve any missing references in strings.xm, styles, etc.-->
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_residentlogout"
         style="@style/button_blue"
         android:layout_width="150dp"
         android:layout_height="50dp"
@@ -19,7 +19,7 @@
         android:text="Logout" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/button_residenttutorial"
         style="@style/button_blue"
         android:layout_width="150dp"
         android:layout_height="50dp"
