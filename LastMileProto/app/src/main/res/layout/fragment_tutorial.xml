@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     tools:context=".resident.Tutorial">
 <!-- robbie this is where you put the ui for the resident tutorial-->
+<<<<<<< HEAD
     <!-- TODO: Update blank fragment layout -->
     <Button
         android:id="@+id/button_tutoriallogout"
@@ -61,5 +62,8 @@
         android:layout_marginTop="235dp"
         android:textAppearance="@style/current_instructions"
         android:text="Tutorial Video" />
+=======
+
+>>>>>>> courier
 
 </RelativeLayout>
