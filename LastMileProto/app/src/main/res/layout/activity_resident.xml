@@ -7,70 +7,7 @@
     tools:context=".resident.ResidentActivity">
     <!-- Robbie, put your xml code  from figma and the palette into here, resolve any missing references in strings.xm, styles, etc.-->
 
-    <Button
-        android:id="@+id/button_residentlogout"
-        style="@style/button_blue"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="23dp"
-        android:layout_marginTop="42dp"
-        android:text="Logout" />
 
-    <Button
-        android:id="@+id/button_residenttutorial"
-        style="@style/button_blue"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="249dp"
-        android:layout_marginTop="42dp"
-        android:text="Tutorial" />
-
-    <Button
-        android:id="@+id/button4"
-        style="@style/button_blue"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="109dp"
-        android:layout_marginTop="633dp"
-        android:text="Save Changes" />
-
-    <Switch
-        android:id="@+id/switch1"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="131dp"
-        android:layout_marginTop="558dp"
-        android:text="Home/Away" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="250dp"
-        android:layout_height="100dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="77dp"
-        android:layout_marginTop="396dp"
-        android:textAppearance="@style/current_instructions"
-        android:text="Current Instructions" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="250dp"
-        android:layout_height="100dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="77dp"
-        android:layout_marginTop="235dp"
-        android:textAppearance="@style/current_instructions"
-        android:text="Photo Upload" />
-
+    <include layout="@layout/fragment_resident" />
 
 </RelativeLayout>

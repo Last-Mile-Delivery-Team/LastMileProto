@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".resident.Tutorial">
+    tools:context=".resident.ResidentActivity">
+    <!-- Robbie, put your xml code  from figma and the palette into here, resolve any missing references in strings.xm, styles, etc.-->
 
     <Button
-        android:id="@+id/button_tutoriallogout"
+        android:id="@+id/button_residentlogout"
         style="@style/button_blue"
         android:layout_width="150dp"
         android:layout_height="50dp"
@@ -17,7 +19,7 @@
         android:text="Logout" />
 
     <Button
-        android:id="@+id/button_tutorialback"
+        android:id="@+id/button_residenttutorial"
         style="@style/button_blue"
         android:layout_width="150dp"
         android:layout_height="50dp"
@@ -25,19 +27,28 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="249dp"
         android:layout_marginTop="42dp"
-        android:text="Back" />
-
+        android:text="Tutorial" />
 
     <Button
         android:id="@+id/button4"
         style="@style/button_blue"
-        android:layout_width="250dp"
-        android:layout_height="75dp"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="82dp"
-        android:layout_marginTop="580dp"
-        android:text="QR Plaque Order" />
+        android:layout_marginStart="109dp"
+        android:layout_marginTop="633dp"
+        android:text="Save Changes" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="131dp"
+        android:layout_marginTop="558dp"
+        android:text="Home/Away" />
 
     <TextView
         android:id="@+id/textView"
@@ -48,7 +59,7 @@
         android:layout_marginStart="77dp"
         android:layout_marginTop="396dp"
         android:textAppearance="@style/current_instructions"
-        android:text="Specific Instructions" />
+        android:text="Current Instructions" />
 
     <TextView
         android:id="@+id/textView2"
@@ -59,6 +70,17 @@
         android:layout_marginStart="77dp"
         android:layout_marginTop="235dp"
         android:textAppearance="@style/current_instructions"
-        android:text="Tutorial Video" />
+        android:text="Photo Upload" />
+
+    <Button
+        android:id="@+id/button_instUpdate"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="396dp"
+        android:text="Update Instructions" />
+
 
 </RelativeLayout>

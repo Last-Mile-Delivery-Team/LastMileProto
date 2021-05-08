@@ -89,18 +89,16 @@
         </item>
 
     </style>
-<<<<<<< HEAD
-
     <style name="current_instructions">
 
         <item name="android:textSize">
             30sp
-=======
+        </item>
+    </style>
     <style name="courier_HiVis">
 
         <item name="android:textSize">
             24sp
->>>>>>> courier
         </item>
 
         <item name="android:textColor">
@@ -108,8 +106,4 @@
         </item>
 
     </style>
-<<<<<<< HEAD
-
-=======
->>>>>>> courier
 </resources>

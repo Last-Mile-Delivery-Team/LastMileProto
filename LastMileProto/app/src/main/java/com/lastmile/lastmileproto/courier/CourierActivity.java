@@ -20,6 +20,6 @@ public class CourierActivity extends AppCompatActivity {
         button_courierlogin.setOnClickListener(view -> {
             Intent MainLogtoCourierLog = new Intent(this, CourierLogin.class);
             startActivity(MainLogtoCourierLog);
-
+        });
     }
 }

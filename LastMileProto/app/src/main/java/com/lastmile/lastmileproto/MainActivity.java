@@ -1,9 +1,11 @@
 package com.lastmile.lastmileproto;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
+import com.lastmile.lastmileproto.resident.ResidentActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -27,6 +29,9 @@ public class MainActivity extends AppCompatActivity {
                 "Replace with your own action", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
         );
+
+        Intent i = new Intent(this, ResidentActivity.class);
+        startActivity(i);
     }
 
     @Override
