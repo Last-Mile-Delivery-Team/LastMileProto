@@ -11,15 +11,23 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.lastmile.lastmileproto.R;
 import com.lastmile.lastmileproto.model.Resident;
 
+import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+
+import okhttp3.FormBody;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.RequestBody;
+import okhttp3.Response;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -105,24 +113,25 @@ public class ResidentFragment extends Fragment {
         });
 
         Button button_instupdate = view.findViewById(R.id.button_instUpdate);
-        button_residentlogout.setOnClickListener(instupdatelistener -> {
+        button_instupdate.setOnClickListener(instupdatelistener -> {
             try {
+                RequestBody formBody = new FormBody.Builder()
+                        .add("Username", "alex.horejsi@gmail.com")
+                        .add("Password", "123")
 
-                // Create a neat value object to hold the URL
-                URL url = new URL("localhost:5000/makeResident");
+                        .build();
 
-// Open a connection(?) on the URL(??) and cast the response(???)
-                HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+                Request request = new Request.Builder()
+                        .url("http://localhost:5000/makeResident")
+                        .post(formBody)
+                        .build();
+                Response response = new OkHttpClient().newCall(request).execute();
 
-// Now it's "open", we can set the request method, headers etc.
-                connection.setRequestProperty("accept", "application/json");
+                if (!response.isSuccessful()) throw new IOException("Unexpected code " + response);
 
-// This line makes the request
-                InputStream responseStream = connection.getInputStream();
+                // Get response body
+                System.out.println(response.body().string());
 
-// Manually converting the response body InputStream to APOD using Jackson
-                ObjectMapper mapper = new ObjectMapper();
-                Resident apod = mapper.readValue(responseStream, Resident.class);
 
 
             }
