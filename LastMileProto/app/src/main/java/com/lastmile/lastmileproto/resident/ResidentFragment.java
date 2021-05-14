@@ -128,6 +128,8 @@ public class ResidentFragment extends Fragment {
                 Response response = new OkHttpClient().newCall(request).execute();
 
                 if (!response.isSuccessful()) throw new IOException("Unexpected code " + response);
+
+                // Get response body
                 System.out.println(response.body().string());
 
 
